@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "run-p lint:*",
+    "lint:js": "next lint",
+    "lint:types": "tsc",
+    "format": "prettier \"src/**/**.{js,jsx,ts,tsx}\" --write"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -25,13 +28,27 @@
     "react-dom": "^18",
     "react-hook-form": "^7.51.5",
     "simple-peer": "^9.11.1",
-    "socket.io-client": "^4.7.5"
+    "socket.io-client": "^4.7.5",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@tanstack/eslint-plugin-query": "^5.35.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/simple-peer": "^9.11.8",
-    "typescript": "^5"
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.2.5",
+    "typescript": "^5",
+    "typescript-eslint": "^7.11.0"
   }
 }

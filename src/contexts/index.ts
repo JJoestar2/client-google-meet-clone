@@ -1,1 +1,1 @@
-export * from './RoomSocketContext';
+export * from "./SocketContext";

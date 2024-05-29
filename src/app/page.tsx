@@ -1,12 +1,11 @@
 import Image from "next/image";
 
 import styles from "./page.module.css";
-import { RoomSocketProvider } from "../contexts";
+import { SocketProvider } from "../contexts";
 
 export default function Home() {
-
   return (
-    <RoomSocketProvider roomId={'d5fsdfsd'}>
+    <SocketProvider>
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
@@ -65,7 +64,9 @@ export default function Home() {
             <h2>
               Learn <span>-&gt;</span>
             </h2>
-            <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+            <p>
+              Learn about Next.js in an interactive course with&nbsp;quizzes!
+            </p>
           </a>
 
           <a
@@ -95,6 +96,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-    </RoomSocketProvider>
+    </SocketProvider>
   );
 }
