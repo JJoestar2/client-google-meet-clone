@@ -1,0 +1,12 @@
+.iconButton {
+    background-color: var(--blue);
+    color: var(--white);
+
+    &.secondary {
+        background-color: var(--ash-gray);
+    }
+
+    &.danger {
+        background-color: var(--red);  
+    }
+}

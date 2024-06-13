@@ -10,7 +10,7 @@ import {
 } from "react";
 import { Socket } from "socket.io-client";
 
-import { socket } from "../app/socket";
+import { socket } from "../socket";
 
 type SocketContextType = {
   isConnected: boolean;

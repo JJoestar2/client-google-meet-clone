@@ -1,0 +1,12 @@
+@import "/src/styles/variables";
+
+.baseInput {
+    border: none;
+    padding: 8.5px 14px 8.5px 8.5px;
+    color: var(--white);
+    background-color: var(--ash-gray);
+    border-radius: 4px;
+
+    font-size: $medium;
+    font-weight: 500;
+}

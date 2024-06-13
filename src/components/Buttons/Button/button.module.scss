@@ -1,0 +1,36 @@
+@import "/src/styles/variables";
+
+.button {
+    text-transform: capitalize;
+    font-size: $semiBold;
+    font-weight: 600;
+
+    color: var(--blue-navy);
+
+    &.text {
+       background-color: transparent;
+       color: var(--blue);
+
+        &.danger {
+           color: var(--red);
+        }   
+    }
+
+    &.outlined {
+        background-color: transparent;
+        border: 1px solid var(--blue);
+
+        &.danger {
+           border: 1px solid var(--red);
+        }    
+    }
+
+    &.contained {
+        background-color: var(--blue);
+    
+        &.danger {
+            background-color: var(--red);
+            color: var(--white);
+        }    
+    }
+}

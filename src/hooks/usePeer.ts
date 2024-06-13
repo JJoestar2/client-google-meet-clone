@@ -7,7 +7,7 @@ import SimplePeer, { Instance as SimplePeerInstance } from "simple-peer";
 
 import useMediaStream from "./useMediaStream";
 
-import { socket } from "@/app/socket";
+import { socket } from "@/socket";
 import { error } from "@/common/utils";
 import { Nullable, PeerId } from "@/common/types";
 
