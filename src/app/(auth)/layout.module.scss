@@ -1,0 +1,16 @@
+.auth {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    height: 100vh;
+    width: 100%;
+
+    &_image {
+      width: 55%;  
+      position: relative;
+      .image {
+        max-width: 100%;
+      }
+    }
+}

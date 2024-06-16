@@ -1,0 +1,10 @@
+@import "/src/styles/variables";
+
+.baseCheckbox {
+    color: var(--blue);
+    border-radius: 4px;
+
+    &:checked {
+      color: var(--blue);
+    }
+}
